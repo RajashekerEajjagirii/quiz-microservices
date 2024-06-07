@@ -1,0 +1,11 @@
+#spring:
+#  cloud:
+#    gateway:
+#      mvc:#        routes:#        - id : question-service
+#          uri: lb://QUESTION-SERVICE
+#          predicates:#            -Path=/question/** 
+#            
+#        - id : quiz-service
+#          uri: lb://QUIZ-SERVICE
+#          predicates:
+#            -Path=/quiz/**
